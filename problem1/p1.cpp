@@ -64,7 +64,7 @@ int main (int argc, const char* argv[])
 		for(int i=1; i<1000;i++){
 
 			if(object->isMultiple(i))
-				object->runningCount++;
+				object->runningCount+=i;
 
 		}
 
