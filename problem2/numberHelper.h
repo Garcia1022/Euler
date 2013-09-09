@@ -4,10 +4,16 @@ A class that I will use and expand further as I solve problems.
 
 
 */
+
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+
+
 #ifndef NUMBERHELPER_H
 #define NUMBERHELPER_H
 
-class numberHelper{
+class NumberHelper{
 
 
 	public:

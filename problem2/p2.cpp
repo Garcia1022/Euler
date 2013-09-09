@@ -15,7 +15,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-
+#include "NumberHelper.h"
 
 using namespace std;
 
