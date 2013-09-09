@@ -21,7 +21,32 @@ using namespace std;
 
 
 
+int main()
+{
 
+	NumberHelper numHelp;
+	long sum=0;
+	int  currentFib=0;
+	for(int i=0;currentFib<4000000;i++)
+	{
+		 currentFib=numHelp.nthFibNum(i);
+		
+		if(numHelp.isEven(currentFib))
+			sum=sum+currentFib;
+
+	}	
+	printf("The sum of the even numbers less than 4 million within the Fibonacci sequence is: %lu \n",sum);	
+	
+
+
+
+
+
+
+
+
+return 0;
+}
 
 
 
