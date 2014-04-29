@@ -8,7 +8,7 @@ A class that I will use and expand further as I solve problems.
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <stack>
 
 #ifndef NUMBERHELPER_H
 #define NUMBERHELPER_H
@@ -20,9 +20,9 @@ class NumberHelper{
 		bool isEven(int num);
 		bool isOdd(int num);
 		int  nthFibNum(int num);
-	
+        int countDigits(int num);
 
-
+    bool isPalindrome(int num,int digitCount);
 
 
 
