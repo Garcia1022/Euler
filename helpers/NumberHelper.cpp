@@ -133,3 +133,15 @@ bool NumberHelper::isPalindrome(int num,int digitCount)
     return true;
     
 }
+bool NumberHelper::isEvenlyDivisibleBy(int num,int divsor)
+{
+    if((num%divsor) == 0)
+    return true;
+    
+    return false;
+}
+
+
+
+
+

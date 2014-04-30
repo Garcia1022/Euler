@@ -21,7 +21,7 @@ class NumberHelper{
 		bool isOdd(int num);
 		int  nthFibNum(int num);
         int countDigits(int num);
-
+    bool isEvenlyDivisibleBy(int num,int divisor);
     bool isPalindrome(int num,int digitCount);
 
 
