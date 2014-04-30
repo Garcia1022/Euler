@@ -96,6 +96,7 @@ bool NumberHelper::isPalindrome(int num,int digitCount)
             if((num%10) != numStack.top())
                 return false;
             numStack.pop();
+            num=num/10;
             }
         }
     }
@@ -122,6 +123,8 @@ bool NumberHelper::isPalindrome(int num,int digitCount)
                 if((num%10) != numStack.top())
                 return false;
                 numStack.pop();
+                num=num/10;
+            
             }
         }
     }

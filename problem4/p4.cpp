@@ -32,13 +32,25 @@ using namespace std;
 int main()
 {
     NumberHelper numHelp;
-    int p = 11112;
-    int x=numHelp.countDigits(p);
-    printf("your digits %d \n",x);
+
+    int max = 0;
+    for (int i=100; i<1000;i++)
+    {
+        //Start at i in order to avoid repeat calculations
+        for(int j=i; j<1000;j++)
+        {
+            int tmp=(i)*(j);
+            if(numHelp.isPalindrome(tmp,numHelp.countDigits(tmp)))
+            {
+                
+                if(tmp>max)
+                    max=tmp;
+            }
+        }
+    }
     
-    bool x2 = numHelp.isPalindrome(p,numHelp.countDigits(p));
     
-    printf("your digits %d \n",x2);
+    printf("Largest Palindrome is %d \n",max);
     
     
     
